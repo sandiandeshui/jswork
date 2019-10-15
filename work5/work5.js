@@ -28,7 +28,7 @@ str = '<table border="1">'
 for(let i=9;i>0;--i){
     str += '<tr>'
     for(j=i;j>0;--j){
-        str += '<td>' + i + '*' + j + '=' + ( i * j ) + '</td>'
+        str += '<td>' + j + '*' + i + '=' + ( j * i ) + '</td>'
     }
     str += '</tr>'
 }
