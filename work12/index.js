@@ -1,20 +1,22 @@
-let year = new Date().getFullYear()
-//调用calender函数，设置cal内容显示年历
-document.getElementById("cal").innerHTML = calendar(year)
+let year = new Date().getFullYear();
+document.getElementById("cal").innerHTML = calendar(year);
 
-function setCalendr(year){
-       
+function setCalendar(year) {
+    // let year = new Date().getFullYear();
     var year = parseInt(year);
     console.log(year);
-    var pre = year-1;
-    var next = year+1;
+    var pre = year - 1;
+    var next = year + 1;
     console.log(pre);
     console.log(next);
-    document.getElementById('curyear').setAttribute('data-year', year);
+    // document.getElementById("preyear").innerText = "<<" + pre;
+    // document.getElementById("curyear").innerText = year;
+    // document.getElementById("nextyear").innerText = next + ">>";
     document.getElementById('preyear').setAttribute('data-year', pre);
+    document.getElementById('curyear').setAttribute('data-year', year);
     document.getElementById('nextyear').setAttribute('data-year', next);
-    document.getElementById('curyear').innerText = year
-    document.getElementById('preyear').innerText = "<<"+pre
-    document.getElementById('nextyear').innerText = next+ ">>"
-    document.getElementById("cal").innerHTML = calendar(year)
+    document.getElementById('curyear').innerText = year;
+    document.getElementById('preyear').innerText = "<<" + pre;
+    document.getElementById('nextyear').innerText = next + ">>";
+    document.getElementById("cal").innerHTML = calendar(year);
 }
