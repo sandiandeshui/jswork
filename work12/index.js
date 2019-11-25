@@ -7,7 +7,7 @@ function setCalendar(year) {
     console.log(year);
     var pre = year - 1;
     var next = year + 1;
-    console.log(pre);
+    console.log(pre); 
     console.log(next);
     // document.getElementById("preyear").innerText = "<<" + pre;
     // document.getElementById("curyear").innerText = year;
